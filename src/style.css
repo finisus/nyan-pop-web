@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'pixel';
+  src: url('./metadata/fonts/silkscreen-regular.ttf');
+}
+
+:root {
+  --text: #ffffff;
+  --base: #1e4e8c;
+  --black: #000000;
+  --accent: #82a4b4;
+  --accentTran: rgba(130, 164, 180, 0.69);
+}
+
+.backdrop-shadow {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.0),
+                    0 22px 70px 4px rgba(0,0,0,0.55),
+                    0 0 0 1px rgba(0, 0, 0, 0.0);
+}
+
+html { height: 100%;}
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-color: var(--base);
+  font-family: 'pixel';
+  color: var(--text);
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header span {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow:
+    0.5px 0.5px 0 #000000,
+    -0.5px 0.5px 0 #000000,
+    -0.5px -0.5px 0 #000000,
+    0.5px -0.5px 0 #000000;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 80px;
+  height: calc(100% - 144px);
+  width: calc(100% - 32px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nyanpopgif {
+  width: 304px;
+  border: 4px solid var(--accent);
+}
+
+main .actions {
+  width: 312px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.actions button {
+  background-color: var(--accentTran);
+  border: 2px solid var(--accent);
+  font-family: 'pixel';
+  color: var(--text);
+  font-size: 1rem;
+  text-align: center;
+  padding: 4px 8px;
+  cursor: pointer;
+  text-shadow:
+  0.2px 0.2px 0 #000000,
+  -0.2px 0.2px 0 #000000,
+  -0.2px -0.2px 0 #000000,
+  0.2px -0.2px 0 #000000; 
+}
+.actions button:hover {
+  background-color: var(--base);
+  border: 2px solid var(--accentTran);
+  color: var(--text);
+}
+.actions button:active {
+  background-color: var(--accentTran);
+  border: 2px solid var(--accent);
+  color: var(--text);
+}
+
+#nyanpopTimer {
+  margin-top: 16px;
+  width: 292px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  background-color: var(--accentTran);
+  border: 2px solid var(--accent);
+  padding: 4px 8px;
+}
+#nyanpopTimer span {
+  font-family: 'pixel';
+  font-size: 1rem;
+  text-align: center;
+  text-shadow:
+  0.2px 0.2px 0 #000000,
+  -0.2px 0.2px 0 #000000,
+  -0.2px -0.2px 0 #000000,
+  0.2px -0.2px 0 #000000;
+}
+#nyanpopTimer button {
+  background: none;
+  border: none;
+  font-family: 'pixel';
+  color: var(--text);
+  font-size: 1rem;
+  text-align: center;
+  padding: 4px 8px;
+  cursor: pointer !important;
+  margin-right: 16px;
+  text-shadow:
+  0.2px 0.2px 0 #000000,
+  -0.2px 0.2px 0 #000000,
+  -0.2px -0.2px 0 #000000,
+  0.2px -0.2px 0 #000000;
+}
+#nyanpopTimer button:hover {
+  color: var(--black);
+  text-shadow:
+  0.2px 0.2px 0 #ffffff,
+  -0.2px 0.2px 0 #ffffff,
+  -0.2px -0.2px 0 #ffffff,
+  0.2px -0.2px 0 #ffffff;
+}
+#nyanpopTimer button:active {
+  color: var(--text);
+  text-shadow:
+  0.2px 0.2px 0 #000000,
+  -0.2px 0.2px 0 #000000,
+  -0.2px -0.2px 0 #000000,
+  0.2px -0.2px 0 #000000;
+} 
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+footer span {
+  font-family: 'pixel';
+  color: var(--text);
+  font-size: 1rem;
+  word-break: break-all;
+  text-align: start;
+  margin-left: 16px;
+  text-shadow:
+  0.2px 0.2px 0 #000000,
+  -0.2px 0.2px 0 #000000,
+  -0.2px -0.2px 0 #000000,
+  0.2px -0.2px 0 #000000;
+}
+
+footer button {
+  background-color: var(--accentTran);
+  border: 2px solid var(--accent);
+  font-family: 'pixel';
+  color: var(--text);
+  font-size: 1rem;
+  text-align: center;
+  padding: 4px 8px;
+  cursor: pointer !important;
+  margin-right: 16px;
+  text-shadow:
+  0.2px 0.2px 0 #000000,
+  -0.2px 0.2px 0 #000000,
+  -0.2px -0.2px 0 #000000,
+  0.2px -0.2px 0 #000000;
+}
+footer button:hover {
+  background-color: var(--base);
+  border: 2px solid var(--accentTran);
+  color: var(--text);
+}
+footer button:active {
+  background-color: var(--accentTran);
+  border: 2px solid var(--accent);
+  color: var(--text);
+}
+
+@media screen and (max-height: 716px) {
+  header span {
+    font-size: 2.2rem !important;
+  }
+}
