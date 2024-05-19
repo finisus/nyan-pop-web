@@ -1,5 +1,6 @@
 import './style.css'
 import nyanpopgif from './metadata/nyanpop.gif';
+import nyanpopAudio from './metadata/nyanpop-original.mp3';
 
 // Header
 const header = document.querySelector('header');
@@ -51,19 +52,13 @@ const timerText = document.createElement('span');
 
 let seconds = 0;
 
-timerText.innerHTML = `YOU'VE NYANPOPPED FOR ${seconds.toFixed(1)} SECONDS`
-
-// update the timer every 100 milliseconds
-setInterval(() => {
-  seconds += 0.1;
-  timerText.innerHTML = `YOU'VE NYANPOPPED FOR ${seconds.toFixed(1)} SECONDS`;
-}, 100);
+timerText.innerHTML = `YOU'VE NYAN-POPPED FOR <br>${seconds.toFixed(1)} SECONDS`
 
 const timerTweetBtn = document.createElement('button');
 timerTweetBtn.innerHTML = `TWEET YOUR SCORE!`;
 
 timerTweetBtn.addEventListener('click', () => {
-  const tweetText = `I have NyanPopped FOR ${seconds.toFixed(1)} seconds! http://nyanpop.fun via @nyanpop $NYANPOP`;
+  const tweetText = `I have Nyan-Popped FOR ${seconds.toFixed(1)} seconds! http://nyanpop.fun via @nyanpop $NYANPOP`;
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
   window.open(tweetUrl, '_blank');
 });
@@ -83,7 +78,47 @@ const copyCaBtn = document.createElement('button');
 copyCaBtn.innerHTML = `COPY CA`;
 footer.appendChild(copyCaBtn);
 
+// Landing Page
+const landing = document.getElementById('landing-page');
+landing.id = "landing";
+
+const landingText = document.createElement('span');
+landingText.innerHTML = `READY TO GET<br>NYAN-POPPED?`
+landing.appendChild(landingText);
+
+const enterBtn = document.createElement('button');
+enterBtn.innerHTML = `ENTER!`;
+landing.appendChild(enterBtn)
+
+landing.style.display = 'flex';
+header.style.display = 'none';
+main.style.display = 'none';
+footer.style.display = 'none';
+
 document.addEventListener('DOMContentLoaded', function() {
+
+  const audio = new Audio(nyanpopAudio);
+  audio.loop = true;
+  audio.volume = 1.0;
+
+  // Landing Page Logic
+  enterBtn.addEventListener('click', function() {
+    audio.play().catch(error => {
+      console.log("Autoplay was prevented. Please interact with the page to play audio.", error);
+    });
+
+    landing.style.display = 'none'
+    header.style.display = 'flex';
+    main.style.display = 'flex';
+    footer.style.display = 'flex';
+
+    // run timer after landing closes
+    // update the timer every 100 milliseconds
+    setInterval(() => {
+      seconds += 0.1;
+      timerText.innerHTML = `YOU'VE NYAN-POPPED FOR <br>${seconds.toFixed(1)} SECONDS`;
+    }, 100);
+  });
 
   // Hyperlinks
   telegramBtn.addEventListener('click', function() {
