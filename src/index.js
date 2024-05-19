@@ -63,7 +63,7 @@ const timerTweetBtn = document.createElement('button');
 timerTweetBtn.innerHTML = `TWEET YOUR SCORE!`;
 
 timerTweetBtn.addEventListener('click', () => {
-  const tweetText = `I have NyanPopped FOR ${seconds} seconds! http://nyanpop.fun via @nyanpop $NYANPOP`;
+  const tweetText = `I have NyanPopped FOR ${seconds.toFixed(1)} seconds! http://nyanpop.fun via @nyanpop $NYANPOP`;
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
   window.open(tweetUrl, '_blank');
 });
@@ -82,3 +82,44 @@ footer.appendChild(contract);
 const copyCaBtn = document.createElement('button');
 copyCaBtn.innerHTML = `COPY CA`;
 footer.appendChild(copyCaBtn);
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Hyperlinks
+  telegramBtn.addEventListener('click', function() {
+    window.open('https://x.com/finisvisus', '_blank');
+  });
+  twitterBtn.addEventListener('click', function() {
+    window.open('https://t.me/', '_blank');
+  });
+  chartBtn.addEventListener('click', function() {
+    window.open('https://dexscreener.com/solana/', '_blank');
+  });
+  buyBtn.addEventListener('click', function() {
+    window.open('https://www.pump.fun/', '_blank');
+  });
+
+  // Copy Btn Logic
+  const copyButton = copyCaBtn;
+  const textToCopy = contract.innerHTML;
+  copyButton.addEventListener("click", async () => {
+    try {
+      // Try the modern Clipboard API first (if supported)
+      await navigator.clipboard.writeText(textToCopy);
+      console.log("Text copied successfully using Clipboard API");
+      alert("Contract copied successfully!");
+    } catch (err) {
+      // If Clipboard API fails, use the legacy approach
+      const textArea = document.createElement("textarea");
+      textArea.value = textToCopy;
+      textArea.style.position = "fixed"; // Hide element off-screen
+      textArea.style.left = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      console.log("Text copied successfully using legacy approach");
+      alert("Contract copied successfully!");
+    }
+  });
+});
