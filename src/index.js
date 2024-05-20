@@ -71,7 +71,7 @@ main.appendChild(nyanpopTimer);
 const footer = document.querySelector('footer');
 
 const contract = document.createElement('span');
-contract.innerHTML = `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`;
+contract.innerHTML = `updating ca...`;
 footer.appendChild(contract);
 
 const copyCaBtn = document.createElement('button');
