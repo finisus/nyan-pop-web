@@ -58,7 +58,7 @@ const timerTweetBtn = document.createElement('button');
 timerTweetBtn.innerHTML = `TWEET YOUR SCORE!`;
 
 timerTweetBtn.addEventListener('click', () => {
-  const tweetText = `I have Nyan-Popped FOR ${seconds.toFixed(1)} seconds! http://nyanpop.fun via @nyanpop $NYANPOP`;
+  const tweetText = `I have Nyan-Popped FOR ${seconds.toFixed(1)} seconds! http://nyanpop.fun via @NyanpopSolana $NYANPOP`;
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
   window.open(tweetUrl, '_blank');
 });
