@@ -138,10 +138,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Hyperlinks
   telegramBtn.addEventListener('click', function() {
-    window.open('https://x.com/finisvisus', '_blank');
+    window.open('https://x.com/NyanpopSolana', '_blank');
   });
   twitterBtn.addEventListener('click', function() {
-    window.open('https://t.me/', '_blank');
+    window.open('https://t.me/nyanpopjoin', '_blank');
   });
   chartBtn.addEventListener('click', function() {
     window.open('https://dexscreener.com/solana/', '_blank');
