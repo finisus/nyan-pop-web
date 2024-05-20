@@ -71,7 +71,7 @@ main.appendChild(nyanpopTimer);
 const footer = document.querySelector('footer');
 
 const contract = document.createElement('span');
-contract.innerHTML = `BUEQpQcQJb5Gj4p5coZKRzucej93g6Pn6CNPfLJTQH3r`;
+contract.innerHTML = `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`;
 footer.appendChild(contract);
 
 const copyCaBtn = document.createElement('button');
@@ -90,10 +90,26 @@ const enterBtn = document.createElement('button');
 enterBtn.innerHTML = `ENTER!`;
 landing.appendChild(enterBtn)
 
+
+/* TEMP CODE */
+
+
+const body = document.querySelector('body');
+body.style.backgroundColor = "#ffffff";
+
+landing.style.display = 'none';
+header.style.display = 'none';
+main.style.display = 'none';
+footer.style.display = 'none';
+
+/*
+NORMAL CODE
+
 landing.style.display = 'flex';
 header.style.display = 'none';
 main.style.display = 'none';
 footer.style.display = 'none';
+*/
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -131,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('https://dexscreener.com/solana/', '_blank');
   });
   buyBtn.addEventListener('click', function() {
-    window.open('https://www.pump.fun/BUEQpQcQJb5Gj4p5coZKRzucej93g6Pn6CNPfLJTQH3r', '_blank');
+    window.open('https://www.pump.fun/', '_blank');
   });
 
   // Copy Btn Logic
