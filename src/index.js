@@ -90,26 +90,10 @@ const enterBtn = document.createElement('button');
 enterBtn.innerHTML = `ENTER!`;
 landing.appendChild(enterBtn)
 
-
-/* TEMP CODE */
-
-
-const body = document.querySelector('body');
-body.style.backgroundColor = "#ffffff";
-
-landing.style.display = 'none';
-header.style.display = 'none';
-main.style.display = 'none';
-footer.style.display = 'none';
-
-/*
-NORMAL CODE
-
 landing.style.display = 'flex';
 header.style.display = 'none';
 main.style.display = 'none';
 footer.style.display = 'none';
-*/
 
 document.addEventListener('DOMContentLoaded', function() {
 
