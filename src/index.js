@@ -71,7 +71,7 @@ main.appendChild(nyanpopTimer);
 const footer = document.querySelector('footer');
 
 const contract = document.createElement('span');
-contract.innerHTML = `updating ca...`;
+contract.innerHTML = `BVoKkh5Ef6x6yLxpCUsugRWA2qnoeuue3R77obEhbzjc`;
 footer.appendChild(contract);
 
 const copyCaBtn = document.createElement('button');
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('https://dexscreener.com/solana/', '_blank');
   });
   buyBtn.addEventListener('click', function() {
-    window.open('https://www.pump.fun/', '_blank');
+    window.open('https://www.pump.fun/BVoKkh5Ef6x6yLxpCUsugRWA2qnoeuue3R77obEhbzjc', '_blank');
   });
 
   // Copy Btn Logic
