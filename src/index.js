@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('https://t.me/nyanpopjoin', '_blank');
   });
   chartBtn.addEventListener('click', function() {
-    window.open('https://dexscreener.com/solana/', '_blank');
+    window.open('https://www.pump.fun/BVoKkh5Ef6x6yLxpCUsugRWA2qnoeuue3R77obEhbzjc', '_blank');
   });
   buyBtn.addEventListener('click', function() {
     window.open('https://www.pump.fun/BVoKkh5Ef6x6yLxpCUsugRWA2qnoeuue3R77obEhbzjc', '_blank');
