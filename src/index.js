@@ -22,6 +22,7 @@ main.appendChild(nyanpopGif);
 const actions = document.createElement('div');
 actions.classList.add("actions");
 
+/*
 const telegramBtn = document.createElement('button');
 telegramBtn.id = "telegram-button";
 telegramBtn.innerHTML = `TG`;
@@ -36,6 +37,7 @@ const chartBtn = document.createElement('button');
 chartBtn.id = "chart-button";
 chartBtn.innerHTML = `CHART`;
 actions.appendChild(chartBtn);
+*/
 
 const buyBtn = document.createElement('button');
 buyBtn.id = "buy-button";
@@ -58,8 +60,8 @@ const timerTweetBtn = document.createElement('button');
 timerTweetBtn.innerHTML = `TWEET YOUR SCORE!`;
 
 timerTweetBtn.addEventListener('click', () => {
-  const tweetText = `I have Nyan-Popped FOR ${seconds.toFixed(1)} seconds! http://nyanpop.fun via @NyanpopSolana $NYANPOP`;
-  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
+  const tweetText = `I have Nyan-Popped FOR ${seconds.toFixed(1)} seconds! http://nyanpop.fun #nyanpop`;
+  const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
   window.open(tweetUrl, '_blank');
 });
 
@@ -71,7 +73,7 @@ main.appendChild(nyanpopTimer);
 const footer = document.querySelector('footer');
 
 const contract = document.createElement('span');
-contract.innerHTML = `BVoKkh5Ef6x6yLxpCUsugRWA2qnoeuue3R77obEhbzjc`;
+contract.innerHTML = `xxxxx`;
 footer.appendChild(contract);
 
 const copyCaBtn = document.createElement('button');
@@ -120,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
   });
 
+  /*
   // Hyperlinks
   twitterBtn.addEventListener('click', function() {
     window.open('https://x.com/NyanpopSolana', '_blank');
@@ -130,8 +133,9 @@ document.addEventListener('DOMContentLoaded', function() {
   chartBtn.addEventListener('click', function() {
     window.open('https://www.pump.fun/BVoKkh5Ef6x6yLxpCUsugRWA2qnoeuue3R77obEhbzjc', '_blank');
   });
+  */
   buyBtn.addEventListener('click', function() {
-    window.open('https://www.pump.fun/BVoKkh5Ef6x6yLxpCUsugRWA2qnoeuue3R77obEhbzjc', '_blank');
+    window.open('https://www.nuts.fun/', '_blank');
   });
 
   // Copy Btn Logic
