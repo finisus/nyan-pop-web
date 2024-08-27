@@ -73,7 +73,7 @@ main.appendChild(nyanpopTimer);
 const footer = document.querySelector('footer');
 
 const contract = document.createElement('span');
-contract.innerHTML = `xxxxx`;
+contract.innerHTML = `P2CYStU1wg2BWZcJqAhDkf5Hrx69KuEKuBN2zhRcNUT`;
 footer.appendChild(contract);
 
 const copyCaBtn = document.createElement('button');
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   */
   buyBtn.addEventListener('click', function() {
-    window.open('https://www.nuts.fun/', '_blank');
+    window.open('https://www.nuts.fun/nuts/P2CYStU1wg2BWZcJqAhDkf5Hrx69KuEKuBN2zhRcNUT/nut', '_blank');
   });
 
   // Copy Btn Logic
