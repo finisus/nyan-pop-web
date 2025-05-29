@@ -42,7 +42,7 @@ actions.appendChild(chartBtn);
 const buyBtn = document.createElement('button');
 buyBtn.id = "buy-button";
 buyBtn.innerHTML = `BUY`;
-actions.appendChild(buyBtn); 
+actions.appendChild(buyBtn);
 
 main.appendChild(actions);
 
@@ -73,7 +73,7 @@ main.appendChild(nyanpopTimer);
 const footer = document.querySelector('footer');
 
 const contract = document.createElement('span');
-contract.innerHTML = `P2CYStU1wg2BWZcJqAhDkf5Hrx69KuEKuBN2zhRcNUT`;
+contract.innerHTML = `So11111111111111111111111111111111111111112`;
 footer.appendChild(contract);
 
 const copyCaBtn = document.createElement('button');
@@ -122,20 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
   });
 
-  /*
-  // Hyperlinks
-  twitterBtn.addEventListener('click', function() {
-    window.open('https://x.com/NyanpopSolana', '_blank');
-  });
-  telegramBtn.addEventListener('click', function() {
-    window.open('https://t.me/nyanpopjoin', '_blank');
-  });
-  chartBtn.addEventListener('click', function() {
-    window.open('https://www.pump.fun/BVoKkh5Ef6x6yLxpCUsugRWA2qnoeuue3R77obEhbzjc', '_blank');
-  });
-  */
   buyBtn.addEventListener('click', function() {
-    window.open('https://www.nuts.fun/nuts/P2CYStU1wg2BWZcJqAhDkf5Hrx69KuEKuBN2zhRcNUT/nut', '_blank');
+    window.open('https://www.nuts.fun/nuts/So11111111111111111111111111111111111111112/nut', '_blank');
   });
 
   // Copy Btn Logic
